@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "PEP Vital Signs Analyzer",
+  "version": "1.0",
+  "description": "Analisa dados vitais e glicemia capilar do PEP",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://pep.sgh.saude.rn.gov.br/pep/cadastrar_evolucao_medica/*"
+      ],
+      "js": [
+        "dist/content.js"
+      ]
+    }
+  ]
+}
