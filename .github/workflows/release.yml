@@ -31,10 +31,16 @@ jobs:
       - name: Create release zip
         run: git archive -o ../pep-sva-release.zip HEAD
 
+      - name: Get new version
+        id: package_version
+        run: echo "VERSION=$(jq -r .version package.json)" >> $GITHUB_ENV
+
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           files: pep-sva-release.zip
+          name: Release ${{ env.VERSION }}
+          tag_name: ${{ env.VERSION }}
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
