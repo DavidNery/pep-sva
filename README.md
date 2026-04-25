@@ -16,28 +16,18 @@ A extensão **PEP Vital Signs Analyzer** é uma ferramenta para o navegador Chro
 
 ## Instalação
 
-1. **Clone o Repositório**:
-   ```
-   git clone <url-do-repositorio>
-   cd pep-vital-signs-analyzer
-   ```
+1. **Baixe a Última Versão**:
+   - Acesse a página de [Releases](https://github.com/DavidNery/pep-sva/releases) no GitHub.
+   - Baixe o arquivo `pep-sva-release.zip` da versão mais recente.
 
-2. **Instale as Dependências**:
-   ```
-   npm install
-   ```
+2. **Extraia o Arquivo**:
+   - Extraia o conteúdo do arquivo ZIP baixado para uma pasta separada
 
-3. **Construa a Extensão**:
-   ```
-   npm run build
-   ```
-   Isso gerará os arquivos compilados na pasta `dist/`.
-
-4. **Carregue no Chrome**:
+3. **Carregue no Chrome**:
    - Abra o Chrome e navegue para `chrome://extensions/`.
    - Ative o **Modo Desenvolvedor** (canto superior direito).
    - Clique em **Carregar sem compactação**.
-   - Selecione a pasta `dist/` do projeto.
+   - Selecione a pasta que os arquivos foram extraídos e clique em **Carregar**.
 
 A extensão estará ativa nas páginas correspondentes do sistema PEP.
 
