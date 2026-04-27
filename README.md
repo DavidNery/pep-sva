@@ -55,7 +55,7 @@ A extensão estará ativa nas páginas correspondentes do sistema PEP.
 ## Requisitos
 
 - Navegador Chrome (ou baseado em Chromium).
-- Acesso ao sistema PEP (Plataforma Eletrônica do Paciente) do Hospital Geral de Natal (HGN).
+- Acesso ao sistema PEP (Plataforma Eletrônica do Paciente)
 
 ## Contribuição
 
